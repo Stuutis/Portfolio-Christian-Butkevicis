@@ -23,7 +23,7 @@ export function Project({
       <div>
         <div className="flex items-center mb-2 text-lg">
           <a
-            className="text-slate-200 hover:text-slate-50 cursor-pointer hover:underline"
+            className="text-slate-200 hover:text-slate-50 cursor-pointer hover:underline lg:text-2xl"
             target="_blank"
             href={linkDirection}
           >
