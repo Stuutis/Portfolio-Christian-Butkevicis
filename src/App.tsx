@@ -1,10 +1,9 @@
 import { About } from "./components/about";
-import { Project } from "./components/project";
-import { Language } from "./components/language";
+import { Navigation } from "./components/navigation";
+import { ProjectList } from "./components/projectList";
 import wenerskin from "./assets/pictures/wenerskin.png";
 import fotonaSante from "./assets/pictures/fotonaSante.png";
 import zeropreenchedor from "./assets/pictures/zeropreenchedorcuro.png";
-import { Navigation } from "./components/navigation";
 
 export function App() {
   return (
@@ -21,51 +20,30 @@ export function App() {
             <h1 className="text-slate-200 pt-2 pb-4 mt-10 mb-4 text-3xl  sticky top-0 bg-slate-900 z-10 ">
               Projetos
             </h1>
-            <div className="mb-6">
-              <Project
-                hasLink
-                linkDirection="https://zeropreenchedorcurso.com/"
-                hasImage
-                image={zeropreenchedor}
-                projectName="Landing Page Zeropreenchedor Curso"
-                projectDescription="Foi realizado a criação de uma Landing Page para a venda de um curso
-          para médicos da area de estetica facial."
-              />
-              <div className="flex gap-3">
-                <Language language="React" />
-                <Language language="TailWindCSS" />
-              </div>
-            </div>
-            <div className="mb-6">
-              <Project
-                hasImage
-                image={wenerskin}
-                hasLink
-                linkDirection="https://zeropreenchedorcurso.com/wenerskin"
-                projectName="Landing Page curso método WenerSkin"
-                projectDescription="Landing Page sobre o curso do método WenerSkin, curso para médicos da area de estetica facial."
-              />
-              <div className="flex gap-3">
-                <Language language="React" />
-                <Language language="TailWindCSS" />
-              </div>
-            </div>
-
-            <div className="mb-6">
-              <Project
-                hasLink
-                linkDirection="https://fotonasante.com.br/"
-                hasImage
-                projectName="Site FotonaSante"
-                projectDescription="Site FotonaSante é um site com informações sobre a marca FotonaSante, foi criado varias paginas para explicar cada um dos procedimentos realizados pela empresa. "
-                image={fotonaSante}
-              />
-              <div className="flex gap-3">
-                <Language language="HTML" />
-                <Language language="CSS" />
-                <Language language="JavaScript" />
-              </div>
-            </div>
+            <ProjectList
+              projectName="Zeropreenchedor Curso"
+              projectDescription="Landing Page desenvolvida para o curso do Zeropreenchedor, voltado para medicos da area de estetica facial."
+              image={zeropreenchedor}
+              imageDescription="Print do site do Zeropreenchedorcurso"
+              linkDirection="https://zeropreenchedorcurso.com"
+              languages={["React", "TailwindCSS"]}
+            />
+            <ProjectList
+              image={wenerskin}
+              linkDirection="https://zeropreenchedorcurso.com/wenerskin"
+              projectName="Landing Page curso método WenerSkin"
+              projectDescription="Landing Page sobre o curso do método WenerSkin, curso para médicos da area de estetica facial."
+              languages={["React", "TailwindCSS"]}
+              imageDescription="Print do site zeropreenchedor na pagina WenerSkin."
+            />
+            <ProjectList
+              imageDescription="Print do site fotonasante"
+              linkDirection="https://fotonasante.com.br/"
+              projectName="Site FotonaSante"
+              projectDescription="Site FotonaSante é um site com informações sobre a marca FotonaSante, foi criado varias paginas para explicar cada um dos procedimentos realizados pela empresa. "
+              image={fotonaSante}
+              languages={["HTML", "CSS", "HTML"]}
+            />
           </section>
         </div>
       </div>

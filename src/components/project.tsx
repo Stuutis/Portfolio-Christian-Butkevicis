@@ -1,6 +1,6 @@
 import { ArrowLink } from "../assets/svg/svgs";
 
-interface ProjectProps {
+export interface ProjectProps {
   projectName: string;
   projectDescription: string;
   hasLink?: boolean;
@@ -22,7 +22,13 @@ export function Project({
     <div className="sm:flex sm:flex-row-reverse sm:items-center sm:gap-4 sm:justify-between ">
       <div>
         <div className="flex items-center mb-2 text-lg">
-          <h3 className="text-slate-200  ">{projectName}</h3>
+          <a
+            className="text-slate-200 hover:text-slate-50 cursor-pointer hover:underline"
+            target="_blank"
+            href={linkDirection}
+          >
+            {projectName}
+          </a>
           {hasLink ? <ArrowLink link={linkDirection} /> : ""}
         </div>
         <p className="text-slate-400 mb-2">{projectDescription}</p>

@@ -18,7 +18,7 @@ export function Navigation() {
             Eu dou vida as suas ideias, construindo e engajando uma experiencia
             digital incrivel e acessivel.
           </p>
-          <div className="hidden lg:flex lg:flex-col lg:gap-4 ">
+          <div className="hidden lg:flex lg:flex-col lg:gap-4 lg:mt-20 ">
             <a
               className="text-slate-400 hover:text-slate-200 text-xl"
               href="#about"
