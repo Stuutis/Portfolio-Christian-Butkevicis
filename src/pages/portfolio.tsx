@@ -4,6 +4,7 @@ import { ProjectList } from "../components/projectList";
 import wenerskin from "../assets/pictures/wenerskin.png";
 import fotonaSante from "../assets/pictures/fotonaSante.png";
 import zeropreenchedor from "../assets/pictures/zeropreenchedorcuro.png";
+import barbershop from "../assets/pictures/barbershop.png";
 
 export function PortfolioChris() {
   return (
@@ -42,7 +43,15 @@ export function PortfolioChris() {
               projectName="Site FotonaSante"
               projectDescription="Site FotonaSante é um site com informações sobre a marca FotonaSante, foi criado varias paginas para explicar cada um dos procedimentos realizados pela empresa. "
               image={fotonaSante}
-              languages={["HTML", "CSS", "HTML"]}
+              languages={["HTML", "CSS", "JS"]}
+            />
+            <ProjectList
+              imageDescription="Print do site barbershop"
+              linkDirection="https://christianbdev.com/barbershop"
+              projectName="Landing Page BarberShop"
+              projectDescription="Este é uma landing page feita para barbearias, criada com o intuido de estudar, com todos os links, imagens e cores podendo ser modificadas de maneira facil para o possivel cliente. "
+              image={barbershop}
+              languages={["React", "TailwindCSS"]}
             />
           </section>
         </div>
