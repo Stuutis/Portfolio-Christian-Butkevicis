@@ -15,7 +15,7 @@ export function About() {
       <p className="text-slate-400 mb-4">
         Tenho conhecimento em{" "}
         <span className="text-slate-200">
-          JavaScript, TypeScript, React, NodeJs, HTML, CSS, TailWindCSS, Python.
+          JavaScript, TypeScript, React, NodeJs, TailWindCSS, Python.
         </span>
       </p>
       <p className="text-slate-400 mb-4">
